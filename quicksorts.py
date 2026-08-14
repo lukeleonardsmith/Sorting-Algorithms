@@ -57,7 +57,7 @@ def quick_sort_fast(a):
     if len(small) == 0 and len(big) == 0:
         return middle
     elif len(small) == 0:
-        return middle + quick_sortfast(big)
+        return middle + quick_sort_fast(big)
     elif len(big) == 0:
-        return quick_sortfast(small) + middle
-    return quick_sortfast(small) + middle + quick_sortfast(big)
+        return quick_sort_fast(small) + middle
+    return quick_sort_fast(small) + middle + quick_sort_fast(big)
