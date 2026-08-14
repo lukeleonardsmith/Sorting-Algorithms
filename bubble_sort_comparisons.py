@@ -13,4 +13,4 @@ def bubble_sort_comparison():
   print("bubble_sort_finish_early time:")
   print(timeit.timeit(lambda: bubble_sort_finish_early(a)))
   print("Percentage difference in time:")
-  print(((timeit.timeit(lambda: bubble_sort_finish_early(a)) - timeit.timeit(lambda: bubble_sort_finish_early(a)))/timeit.timeit(lambda: bubble_sort_finish_early(a))*100, "%")
+  print(((timeit.timeit(lambda: bubble_sort_finish_early(a)) - timeit.timeit(lambda: bubble_sort_finish_early(a)))/timeit.timeit(lambda: bubble_sort_finish_early(a)))*100, "%")
