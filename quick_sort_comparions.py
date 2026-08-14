@@ -1,4 +1,5 @@
 import numpy as np
+import timeit
 from quicksorts import quick_sort, quick_sort_fast
 
 def quick_sort_comparisons():
