@@ -1,4 +1,5 @@
 import numpy as np
+from quicksorts import quick_sort, quick_sort_fast
 
 def quick_sort_comparisons():
   a = np.random.randint(low=1,high=128,size=(100))
