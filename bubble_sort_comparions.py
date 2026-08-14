@@ -1,4 +1,5 @@
 import numpy as np
+import timeit
 from bubblesorts import bubble_sort, bubble_sort_finish_early
 
 def bubble_sort_comparison():
