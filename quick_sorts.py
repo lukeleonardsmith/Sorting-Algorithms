@@ -40,7 +40,8 @@ def quick_sort_fast(a):
         return a
     elif len(a) == 2:
         if a[0] > a[1]:
-            return a.reverse()  
+            a.reverse()
+            return a  
         else:
             return a
     else:
