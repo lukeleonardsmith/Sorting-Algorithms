@@ -11,9 +11,7 @@ A Python project where lists of integers are sorted into increasing order using 
 - Examples of all the sorting algorithms working
 - Speed test for lists of lengths: 100, 1000, 10000 between all of the algorithms
 
-## Example Usage
+**NOTE**
+speed_test_10000 takes approximately 15 minutes to run
 
-## Mathematical Background
-
-## Future Improvements
-
+To run, call the name of tne file, e.g. py speed_test_100.py, all necessary functions are called at the end of the file.
