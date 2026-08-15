@@ -5,7 +5,7 @@ from quick_sorts import quick_sort, quick_sort_fast
 from merge_sort import merge, merge_sort
 
 def speed_test_100():
-  a = list(np.random.randint(low=1,high=128,size=(100)))
+  a = np.random.randint(low=1,high=128,size=(100))
   
   bubble_sort_time=timeit.timeit(lambda: bubble_sort(a), number=1)
   bubble_sort_finish_early_time=timeit.timeit(lambda: bubble_sort_finish_early(a), number=1) 
