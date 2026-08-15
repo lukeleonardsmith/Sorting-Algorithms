@@ -12,11 +12,13 @@ def speed_test_1000():
   quick_sort_time=timeit.timeit(lambda: quick_sort(a), number=1)
   quick_sort_fast_time=timeit.timeit(lambda: quick_sort_fast(a), number=1)
   merge_sort_time=timeit.timeit(lambda: merge_sort(a), number=1)
+  insertion_sort_time=timeit.timeit(lambda: insertion_sort(a), number=1)
 
   print("bubble_sort time: ", bubble_sort_time)                          
   print("bubble_sort_finish_early time: ", bubble_sort_finish_early_time)
   print("quick_sort time: ", quick_sort_time)                          
   print("quick_sort_fast time: ", quick_sort_fast_time)
-  print("merge_sort time: ", merge_sort_time)                         
+  print("merge_sort time: ", merge_sort_time)    
+  print("insertion_sort time: ", insertion_sort_time)  
   
 speed_test_1000()
