@@ -1,6 +1,6 @@
 import numpy as np
 import timeit
-from quicksorts import quick_sort, quick_sort_fast
+from quick_sorts import quick_sort, quick_sort_fast
 
 def quick_sort_comparisons():
   a = np.random.randint(low=1,high=128,size=(100))
