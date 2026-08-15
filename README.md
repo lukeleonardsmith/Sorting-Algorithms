@@ -1,6 +1,6 @@
 # Sorting-Algorithms
 
-A Python project where lists of 100 integers are sorted into increasing order using variations of bubble sort and quick sort.
+A Python project where lists of integers are sorted into increasing order using variations of bubble sort and quick sort.
 
 ## Features
 - Two bubble sort algorithms
@@ -9,7 +9,11 @@ A Python project where lists of 100 integers are sorted into increasing order us
 - A speed test between the bubble sorts
 - A speed test between the quick sorts
 - Examples of all the sorting algorithms working
+- Speed test for lists of lengths: 100, 1000, 10000 between all of the algorithms
 
-## Run
+## Example Usage
 
+## Mathematical Background
+
+## Future Improvements
 
