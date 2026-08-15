@@ -6,6 +6,7 @@ A Python project where lists of integers are sorted into increasing order using 
 - Two bubble sort algorithms
 - Two quick sort algorithms
 - One merge sort algorithm
+- One insertion sort algorithm
 - A speed test between the bubble sorts
 - A speed test between the quick sorts
 - Examples of all the sorting algorithms working
