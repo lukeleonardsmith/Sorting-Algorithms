@@ -7,6 +7,8 @@ def merge(a1, a2):
     output:
         sorted list containing all elements from a1 and a2
     """
+    a1 = list(a1)
+    a2 = list(a2)
     a = []
     while (len(a1) > 0) and (len(a2) > 0):
         # Pick the smaller of the two elements
