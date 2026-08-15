@@ -3,6 +3,7 @@ import timeit
 from bubble_sorts import bubble_sort, bubble_sort_finish_early
 from quick_sorts import quick_sort, quick_sort_fast
 from merge_sort import merge, merge_sort
+from insertion_sort import insertion_sort
 
 def speed_test_1000():
   a = np.random.randint(low=1,high=128,size=(1000))
