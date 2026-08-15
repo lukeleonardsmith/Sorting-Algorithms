@@ -18,35 +18,35 @@ def examples():
   
 
 def bubble_sort_example():
-  a = np.random.randint(low=1,high=128,size=(100))
+  a = list(np.random.randint(low=1,high=128,size=(100)))
   print("The random list of numbers: ")
   print(a)
   print("The sorted list of numbers with bubble sort: ")
   print(bubble_sort(a))
 
 def bubble_sort_finish_early_example():
-  a = np.random.randint(low=1,high=128,size=(100))
+  a = list(np.random.randint(low=1,high=128,size=(100)))
   print("The random list of numbers: ")
   print(a)
   print("The sorted list of numbers with bubble sort finish early: ")
   print(bubble_sort_finish_early(a))
 
 def quick_sort_example():
-  a = np.random.randint(low=1,high=128,size=(100))
+  a = list(np.random.randint(low=1,high=128,size=(100)))
   print("The random list of numbers: ")
   print(a)
   print("The sorted list of numbers with quick sort: ")
   print(quick_sort(a))
 
 def quick_sort_fast_example():
-  a = np.random.randint(low=1,high=128,size=(100))
+  a = list(np.random.randint(low=1,high=128,size=(100)))
   print("The random list of numbers: ")
   print(a)
   print("The sorted list of numbers with quick sort fast: ")
   print(quick_sort_fast(a))
 
 def merge_sort_example():
-  a = np.random.randint(low=1,high=128,size=(100))
+  a = list(np.random.randint(low=1,high=128,size=(100)))
   print("The random list of numbers: ")
   print(a)
   print("The sorted list of numbers with merge sort: ")
