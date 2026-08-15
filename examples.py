@@ -2,7 +2,7 @@ import numpy as np
 from bubble_sorts import bubble_sort, bubble_sort_finish_early
 from quick_sorts import quick_sort, quick_sort_fast
 from merge_sort import merge, merge_sort
-from insertion_sort impotr insertion_sort
+from insertion_sort import insertion_sort
 
 def examples():
   print("The following are each respective sorting algorithms sorting unique lists of 100 random integers.")
