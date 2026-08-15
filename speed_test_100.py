@@ -1,7 +1,7 @@
 import numpy as np
 import timeit
-from bubblesorts import bubble_sort, bubble_sort_finish_early
-from quicksorts import quick_sort, quick_sort_fast
+from bubble_sorts import bubble_sort, bubble_sort_finish_early
+from quick_sorts import quick_sort, quick_sort_fast
 from merge_sort import merge, merge_sort
 
 def speed_test_100():
