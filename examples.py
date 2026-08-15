@@ -22,14 +22,14 @@ def bubble_sort_example():
   print("The random list of numbers: ")
   print(a)
   print("The sorted list of numbers with bubble sort: ")
-  print(buble_sort(a))
+  print(bubble_sort(a))
 
 def bubble_sort_finish_early_example():
   a = np.random.randint(low=1,high=128,size=(100))
   print("The random list of numbers: ")
   print(a)
   print("The sorted list of numbers with bubble sort finish early: ")
-  print(buble_sort_finish_early(a))
+  print(bubble_sort_finish_early(a))
 
 def quick_sort_example():
   a = np.random.randint(low=1,high=128,size=(100))
