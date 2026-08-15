@@ -2,7 +2,7 @@ import numpy as np
 import timeit
 from quick_sorts import quick_sort, quick_sort_fast
 
-def quick_sort_comparisons():
+def quick_sort_comparison():
   a = np.random.randint(low=1,high=128,size=(100))
   
   quick_sort_time=timeit.timeit(lambda: quick_sort(a), number=1)
