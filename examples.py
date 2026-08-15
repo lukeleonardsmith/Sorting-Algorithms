@@ -41,4 +41,5 @@ def quick_sort_fast_example():
   print(a)
   print("The sorted list of numbers with quick sort (fast): ")
   print(quick_sort_fast(a))
-  
+
+examples()
