@@ -1,17 +1,10 @@
 def merge(a1, a2):
-    """Merge two sorted lists a1 and a2 and return merged list
-
-    input:
-        a1 = first sorted list
-        a2 = second sorted list
-    output:
-        sorted list containing all elements from a1 and a2
-    """
+    
     a1 = list(a1)
     a2 = list(a2)
     a = []
     while (len(a1) > 0) and (len(a2) > 0):
-        # Pick the smaller of the two elements
+        # Pick the smaller of the two elements and append it to the smaller of an empty list
         if a1[0] < a2[0]:
             a.append(a1.pop(0))
         else:
@@ -23,17 +16,11 @@ def merge(a1, a2):
     return a
 
 def merge_sort(a):
-    """Sort the list a in ascending order and return sorted list
 
-    input:
-        a = unsorted list
-    output:
-        sorted list containing all elements from a
-    """
     n = len(a)
-    if n <= 1:
+    if n <= 1: # List is sorted if only one element
         return a
     else:
-        a1 = a[: n // 2]
+        a1 = a[: n // 2] # Split the list in two
         a2 = a[n // 2 :]
-        return merge(merge_sort(a1), merge_sort(a2))
+        return merge(merge_sort(a1), merge_sort(a2)) # Recursively call merge_sort until merging single entries
