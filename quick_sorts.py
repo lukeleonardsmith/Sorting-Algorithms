@@ -3,7 +3,7 @@ def quick_sort(a):
     middle = []
     big = []
     if len(a) == 1:  
-        return a # If a list only has one element is is sorted
+        return a # If a list only has one element, it is sorted
     elif len(a) == 2:
         if a[0] > a[1]:
             b = list(a)
@@ -11,7 +11,7 @@ def quick_sort(a):
             a[1] = b[0]
             return a # If a list has two elements and it is unordered, swapping the elements around will sort it
         else:
-            return a # If both elemnts are sorted, then all elements are sorted
+            return a # If both elements are sorted, then the list is sorted
     else:
         for k in range (0, len(a)):
             if a[k] < a[len(a)//2]:
@@ -26,10 +26,10 @@ def quick_sort(a):
         return middle + quick_sort(big) # As no elements in small, the sorted list is middle and then the sorted version of big
     elif len(big) == 0:
         return quick_sort(small) + middle # As no elements in big, the sorted list is and the sorted version of small and then middle
-    return quick_sort(small) + middle + quick_sort(big) # When small and big are sorted, pace middle between them and then the list is sorted. This will work recursively as at a point, the sub lists will be either length one or two, which are shown how to sort
+    return quick_sort(small) + middle + quick_sort(big) # When small and big are sorted, place middle between them and then the list is sorted. This will work recursively as at a point, the sub lists will be either length one or two, which are shown how to sort
 
 '''
-Below is an alterate version which has been changed to be as time efficient as possible.
+Below is an alterative version which has been changed to be as time efficient as possible.
 '''
 
 def quick_sort_fast(a):
@@ -40,13 +40,13 @@ def quick_sort_fast(a):
         return a
     elif len(a) == 2:
         if a[0] > a[1]:
-            a.reverse() # The inbuilt reverse function is more effective than running more code
+            a.reverse() # The built in reverse function is more effective than running more code
             return a  
         else:
             return a
     else:
         length = len(a)
-        alengthover2 = a[len(a)//2] # By doing this, a[len(a)//2] is ont needlessly recalculated
+        alengthover2 = a[len(a)//2] # By doing this, a[len(a)//2] is not needlessly recalculated
         for k in range (0, length):
             ak = a[k] # By doing this, a[k] is not needlessly recalculated
             if ak < alengthover2:
