@@ -21,12 +21,12 @@ def size_plot():
   for i in input_size:
     a = np.random.randint(low=1,high=10000,size=(i))
     
-    bubble_sort_time.append(timeit.timeit(lambda: bubble_sort(a), number=100)/100)
-    bubble_sort_finish_early_time.append(timeit.timeit(lambda: bubble_sort_finish_early(a), number=100)/100)
-    quick_sort_time.append(timeit.timeit(lambda: quick_sort(a), number=100)/100)
-    quick_sort_fast_time.append(timeit.timeit(lambda: quick_sort_fast(a), number=100)/100)
-    merge_sort_time.append(timeit.timeit(lambda: merge_sort(a), number=100)/100)
-    insertion_sort_time.append(timeit.timeit(lambda: insertion_sort(a), number=100)/100)
+    bubble_sort_time = np.append(bubble_sort_time, timeit.timeit(lambda: bubble_sort(a), number=100)/100)
+    bubble_sort_finish_early_time = np.append(bubble_sort_finish_early_time, timeit.timeit(lambda: bubble_sort_finish_early(a), number=100)/100)
+    quick_sort_time = np.append(quick_sort_time, timeit.timeit(lambda: quick_sort(a), number=100)/100)
+    quick_sort_fast_time = np.append(quick_sort_fast_time, timeit.timeit(lambda: quick_sort_fast(a), number=100)/100)
+    merge_sort_time = np.append(merge_sort_time, timeit.timeit(lambda: merge_sort(a), number=100)/100)
+    insertion_sort_time = np.append(insertion_sort_time, timeit.timeit(lambda: insertion_sort(a), number=100)/100)
 
   plt.plot(input_size, bubble_sort_time, label = Bubble_Sort)
   plt.plot(input_size, bubble_sort_finish_early_time, label = Bubble_Sort_Finish_Early)
@@ -35,7 +35,7 @@ def size_plot():
   plt.plot(input_size, merge_sort_time, label = Merge_Sort)
   plt.plot(input_size, insertion_sort_time, label = Insertion_Sort)
   plt.xlabel("Input Size")
-  plt.ylabel("NTime taken")
+  plt.ylabel("Time taken")
   plt.title("Runtime vs Input Size")
   plt.savefig("images/runtime_vs_input_size.png", dpi=300, bbox_inches="tight")
   plt.show()
