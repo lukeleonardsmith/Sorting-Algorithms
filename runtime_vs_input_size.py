@@ -9,8 +9,8 @@ from quick_sorts import quick_sort, quick_sort_fast
 from merge_sort import merge, merge_sort
 from insertion_sort import insertion_sort
 
-def size_plot():
-  input_size = np.array([100, 500, 1000, 2000])
+def plots():
+  input_size = np.array([100, 500, 1000, 2000, 5000])
   bubble_sort_time = np.array([])
   bubble_sort_finish_early_time = np.array([])
   quick_sort_time = np.array([])
@@ -34,10 +34,27 @@ def size_plot():
   plt.plot(input_size, quick_sort_fast_time, label='Quick sort Fast')
   plt.plot(input_size, merge_sort_time, label='Merge Sort')
   plt.plot(input_size, insertion_sort_time, label='Insertion Sort')
+  plt.legend()
   plt.xlabel("Input Size")
-  plt.ylabel("Time taken")
+  plt.ylabel("Time Taken")
   plt.title("Runtime vs Input Size")
   plt.savefig("images/runtime_vs_input_size.png", dpi=300, bbox_inches="tight")
   plt.show()
 
-size_plot()
+  input_squared = input_size**2
+  input_nlogn = input_size*(np.log(input_size))
+  plt.plot(input_size, bubble_sort_time/input_squared, label='Bubble Sort')
+  plt.plot(input_size, bubble_sort_finish_early_time/input_squared, label='Bubble Sort Finish Early')
+  plt.plot(input_size, quick_sort_time/input_nlogn, label='Quick Sort')
+  plt.plot(input_size, quick_sort_fast_time/input_nlogn, label='Quick sort Fast')
+  plt.plot(input_size, merge_sort_time/input_nlogn, label='Merge Sort')
+  plt.plot(input_size, insertion_sort_time/input_squared, label='Insertion Sort')
+  plt.legend()
+  plt.xlabel("Input Size")
+  plt.ylabel("Time Taken / Theoretical Complexity")
+  plt.title("Time taken / Theoretical Complexity") # Should tend to a constant
+  plt.savefig("images/normalised_runtime.png", dpi=300, bbox_inches="tight")
+  plt.show()
+  
+
+plots()
