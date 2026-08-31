@@ -8,12 +8,12 @@ from insertion_sort import insertion_sort
 def speed_test_1000():
   a = np.random.randint(low=1,high=128,size=(1000))
   
-  bubble_sort_time=timeit.timeit(lambda: bubble_sort(a), number=1)
-  bubble_sort_finish_early_time=timeit.timeit(lambda: bubble_sort_finish_early(a), number=1) 
-  quick_sort_time=timeit.timeit(lambda: quick_sort(a), number=1)
-  quick_sort_fast_time=timeit.timeit(lambda: quick_sort_fast(a), number=1)
-  merge_sort_time=timeit.timeit(lambda: merge_sort(a), number=1)
-  insertion_sort_time=timeit.timeit(lambda: insertion_sort(a), number=1)
+  bubble_sort_time=timeit.timeit(lambda: bubble_sort(a), number=10)/10
+  bubble_sort_finish_early_time=timeit.timeit(lambda: bubble_sort_finish_early(a), number=10)/10 
+  quick_sort_time=timeit.timeit(lambda: quick_sort(a), number=10)/10
+  quick_sort_fast_time=timeit.timeit(lambda: quick_sort_fast(a), number=10)/10
+  merge_sort_time=timeit.timeit(lambda: merge_sort(a), number=10)/10
+  insertion_sort_time=timeit.timeit(lambda: insertion_sort(a), number=10)/10
 
   print("bubble_sort time: ", bubble_sort_time)                          
   print("bubble_sort_finish_early time: ", bubble_sort_finish_early_time)
