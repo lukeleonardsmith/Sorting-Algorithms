@@ -11,15 +11,15 @@ A Python project implementing and comparing the performance of multiple sorting 
 - A speed test between the quick sorts
 - Examples of all the sorting algorithms working
 - Speed test for lists of lengths: 100, 1000, 10000 between all of the algorithms
-- Graphs outlining the speed of all the algorithms, and performance realtive to theory
+- Graphs comparing the tested performance of all the algorithms, and theoretical complexity
 
 ## Runtime
 
-All of the algorithms were tested 10 times with the mean runtime recorded and plotted using Python's timeit module. This is then compared to the theortical time complexity of each algorithm.
+All of the algorithms were tested 10 times with the mean runtime recorded and plotted using Python's timeit module. This is then compared to the theoretical time complexity of each algorithm.
 
 ![Runtime](images/runtime_vs_input_size.png)
 
-The above graph shows the  mean runtime for lists of up to 5000 integers.
+The above graph shows the mean runtime for lists of up to 5000 integers.
 
 ## Complexity Analysis
 
@@ -29,11 +29,11 @@ The above graph shows the  mean runtime for lists of up to 5000 integers.
 | Quick Sort | O(n log n) | O(n log n) | O(n²) |
 | Merge Sort | O(n log n) | O(n log n) | O(n log n) |
 
-Using this, the below graph is each of the runtimes divided by there respective average time complexity, e.g. Bubble Sort / $n^2$
+Using this, the graph below shows each of the runtimes divided by their respective average time complexity, e.g. Bubble Sort / $n^2$
 
 ![Runtime](images/normalised_runtime.png)
 
-When the line is straight that shows that the results are in line with the theoretical values, so all bar the bubble sorts are as expected. The bubble sorts may need longer to reach a constant due to the slower nature of bubble sort.
+A horizontal line indicated that the results are consistent with their corresponding theoretical complexities. The bubble sort implementations do stray more noticably, potentially because larger input sizes are needed to show the long term growth.
 
 ## Usage
 
