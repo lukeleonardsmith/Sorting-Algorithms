@@ -5,7 +5,7 @@ from merge_sort import merge, merge_sort
 from insertion_sort import insertion_sort
 
 def examples():
-  print("The following are each respective sorting algorithms sorting unique lists of 100 random integers.")
+  print("The following examples show each sorting algorithm on a randomly generated list of 100 integers.")
   print()
   bubble_sort_example()
   print()
