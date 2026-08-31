@@ -1,6 +1,6 @@
 # Sorting-Algorithms
 
-A Python project where lists of integers are sorted into increasing order using variations of bubble sort and quick sort.
+A Python project implementing and compaing the performance of multiple sorting algorithms.
 
 ## Features
 - Two bubble sort algorithms
