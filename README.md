@@ -1,6 +1,6 @@
 # Sorting-Algorithms
 
-A Python project implementing and compaing the performance of multiple sorting algorithms.
+A Python project implementing and comparing the performance of multiple sorting algorithms.
 
 ## Features
 - Two bubble sort algorithms
