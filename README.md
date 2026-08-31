@@ -11,13 +11,21 @@ A Python project implementing and comparing the performance of multiple sorting 
 - A speed test between the quick sorts
 - Examples of all the sorting algorithms working
 - Speed test for lists of lengths: 100, 1000, 10000 between all of the algorithms
+- Graphs outlining the speed of all the algorithms, and performance realtive to theory
 
-**NOTE**
-speed_test_10000 takes approximately 15-20 minutes to run
+## Runtime
 
-To run, call the name of the file, e.g. py speed_test_100.py, all necessary functions are called at the end of the file.
+All of the algorithms were tested 10 times with the mean runtime recorded and plotted using Python's timeit module. This is then compared to the theortical time complexity of each algorithm.
+
+![Runtime](images/runtime_vs_input_size.png)
+
+The above graph shows the  mean runtime for lists of up to 5000 integers.
 
 ## Complexity Analysis
+
+![Runtime](images/normalised_runtime.png)
+
+The above graph
 
 Bubble sort has a time complexity of O($n^2$), hence multiplying the length of the input list by 10 results in the algorithm taking $(10n)^2/n^2$ = 100 times longer, which is in line with the timings from the speed tests.
 
