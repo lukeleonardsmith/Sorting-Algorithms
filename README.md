@@ -21,6 +21,8 @@ All of the algorithms were tested 10 times with the mean runtime recorded and pl
 
 The above graph shows the mean runtime for lists of up to 5000 integers.
 
+Individual speed tests for specific lengths of inputs, including lists of length 10,000, are able to be run separately.
+
 ## Complexity Analysis
 
 | Algorithm | Best Case | Average Case | Worst Case |
