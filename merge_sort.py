@@ -4,7 +4,7 @@ def merge(a1, a2):
     a2 = list(a2)
     a = []
     while (len(a1) > 0) and (len(a2) > 0):
-        # Pick the smaller of the two elements and append it to the smaller of an empty list
+        # Append the smaller element to the output list
         if a1[0] < a2[0]:
             a.append(a1.pop(0))
         else:
